@@ -19,7 +19,7 @@ public class Dwarf extends MiddleEarthCharacter{
 		if (target instanceof Elf) {
 			damage *= 1.5;
 		}
-		// no damage to dwarf
+		// no damage to wizard
 		else if (target instanceof Wizard) {
 			damage = 0.0;
 		}
