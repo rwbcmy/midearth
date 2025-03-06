@@ -102,4 +102,16 @@ public class CharacterManager {
             System.out.println("------------");
         }
     }
+    
+    public int getCount() {
+    	return count;
+    }
+    
+    public MiddleEarthCharacter[] getAllCharacters() {
+        MiddleEarthCharacter[] copy = new MiddleEarthCharacter[count];
+        for (int i = 0; i < count; i++) {
+            copy[i] = roster[i];
+        }
+        return copy;
+    }
 }
